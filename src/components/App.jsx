@@ -11,8 +11,7 @@ class App extends Component {
     bad: 0,
   };
 
-  feedback = e => {
-    const name = e.target.name;
+  feedback = (name) => {
     this.setState(state => ({ [name]: state[name] + 1 }));
   };
 
